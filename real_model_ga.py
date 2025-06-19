@@ -41,7 +41,7 @@ num_assets = len(stocks)
 # Fungsi evaluasi: memaksimalkan Sharpe Ratio
 def evaluate(weights):
     weights = np.array(weights)
-    port_return = np.dot(returns.mean(), weights) * 252  # tahunan
+    port_return = np.dot(returns.mean(), weights) * 252  
     port_volatility = np.sqrt(np.dot(weights.T, np.dot(returns.cov() * 252, weights)))
     sharpe_ratio = port_return / port_volatility if port_volatility != 0 else 0
     return sharpe_ratio,

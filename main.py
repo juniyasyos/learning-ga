@@ -15,7 +15,7 @@ from analysis import (
 initial_investment = 500_000_000
 train_range = ("2018-01-01", "2023-12-31")
 test_range = ("2024-01-01", "2024-12-31")
-generations = 100
+generations = 1000
 top_n_stocks = 5
 
 # === Inisialisasi dan Unduh Data ===
